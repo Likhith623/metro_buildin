@@ -80,6 +80,7 @@ jobs:
             --timeout=300
             --allow-unauthenticated
             --port=8080
+            --service-account=metro-buildin@nirbhay-488421.iam.gserviceaccount.com
             --set-env-vars=NODE_ENV=production
 
       - name: Show deployment URL
