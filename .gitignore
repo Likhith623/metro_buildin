@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+/dist
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# GCP Credentials (IMPORTANT: Never commit these!)
+gcp-credentials.json
+*-credentials.json
+service-account*.json
+*.pem
+*.key
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Cloud Build
+.gcloud/
+.config/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+.cache/
