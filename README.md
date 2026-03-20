@@ -3,6 +3,74 @@
 Guidewire DEVTrails 2026 - Phase 1 Idea Document  
 Theme: AI-Powered Parametric Income Protection for India's Gig Delivery Workforce
 
+## Phase 1 Submission Snapshot (Judge-Ready)
+
+### Strategy
+1. Build for one clear persona first: Tier-1 food delivery partners with high outdoor exposure.
+2. Cover only one outcome: loss of income caused by external disruptions.
+3. Use parametric automation: event-based triggers and auto-initiated claims.
+4. Keep pricing weekly to match worker earnings cycles.
+5. Make anti-fraud core to architecture, not an afterthought.
+
+### Plan of Execution (Weeks 1-2)
+1. Finalize disruption parameters and thresholds by city-zone:
+	- Weather (rainfall, heat, flood)
+	- Environmental (AQI)
+	- Social/operational (curfew, platform downtime)
+2. Implement weekly premium logic:
+	- Baseline weekly income estimation
+	- Risk-adjusted weekly premium calculation
+	- Weekly coverage cap and payout boundaries
+3. Build the end-to-end flow:
+	- Onboarding -> Policy Creation -> Trigger Monitoring -> Auto-Claim -> Payout
+4. Deploy adversarial controls:
+	- Multi-signal anti-spoofing checks
+	- Anomaly and ring-fraud detection heuristics
+5. Add fairness and trust controls:
+	- Soft-flag review path
+	- Fast resolution SLA for flagged claims
+	- Clear user reason codes for decisions
+
+### Minimal Prototype Scope for This Phase
+1. Persona onboarding flow with consent, profile, and payout setup.
+2. Weekly policy creation with dynamic premium simulation.
+3. Parametric trigger simulator using mocked real-time events.
+4. Automatic claim initiation when trigger + eligibility criteria are satisfied.
+5. Fraud scoring that demonstrates at least one GPS-spoofing scenario.
+6. Payout simulation via UPI/bank sandbox states (approved/pending/blocked).
+7. Analytics dashboard with:
+	- Active weekly policies
+	- Triggered events
+	- Claims approved vs flagged
+	- Average payout turnaround time
+
+### What Judges Should Be Able to See in Demo
+- A worker can onboard and buy weekly income protection in minutes.
+- A disruption event can trigger automated income-loss claim logic without manual filing.
+- Fraudulent spoof behavior is detected and isolated without blocking honest workers.
+- Payout outcomes and platform performance are visible in a clear operations dashboard.
+
+## Idea Document Requirement Coverage
+
+
+1. Requirement with persona-based scenarios and workflow:
+	- See [2. Persona Focus](README.md#2-persona-focus)
+	- See [4. Core Product Workflow](README.md#4-core-product-workflow)
+2. Weekly premium model, parametric triggers, and Web/Mobile justification:
+	- See [5. Weekly Premium and Payout Model](README.md#5-weekly-premium-and-payout-model)
+	- See [6. Parametric Triggers (Indicative v1)](README.md#6-parametric-triggers-indicative-v1)
+	- See [11. Why Web First (vs Mobile Native) in Phase 1](README.md#11-why-web-first-vs-mobile-native-in-phase-1)
+3. AI/ML integration plan (premium, fraud detection, decisioning):
+	- See [7. AI/ML Architecture Plan](README.md#7-aiml-architecture-plan)
+	- See [8. Adversarial Defense & Anti-Spoofing Strategy](README.md#8-adversarial-defense--anti-spoofing-strategy)
+4. Tech stack and development plan:
+	- See [10. Tech Stack (Proposed)](README.md#10-tech-stack-proposed)
+	- See [13. 6-Week Execution Plan](README.md#13-6-week-execution-plan)
+5. Additional relevant details:
+	- See [9. Integration Plan (Phase 1 Scope)](README.md#9-integration-plan-phase-1-scope)
+	- See [12. Minimal Prototype Scope for Phase 1](README.md#12-minimal-prototype-scope-for-phase-1)
+	- See [14. Risk and Mitigation Snapshot](README.md#14-risk-and-mitigation-snapshot)
+
 ## 1. Problem Statement Explained
 
 India's delivery ecosystem (food, grocery, e-commerce) depends on workers who earn daily and settle expenses weekly. Their income is highly sensitive to external disruptions such as heavy rain, heat waves, floods, severe AQI, unplanned curfews, and temporary zone shutdowns.
